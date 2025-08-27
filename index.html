@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Cyber Crime Portal - Home</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <div class="logo">🛡️ Cyber Crime Portal</div>
+    <nav>
+    <ul class="nav-links">
+      <li><a href="index.html" id="nav-home">Home</a></li>
+      <li><a href="about.html" id="nav-about">About</a></li>
+      <li><a href="contact.html" id="nav-contact">Contact</a></li>
+      <li><a href="feedback.html" id="nav-feedback">Feedback</a></li>
+    </ul>
+    <ul class="nav-auth">
+      <li id="auth-link"><a href="login.html"> Login / Register</a></li>
+    </ul>
+  </nav>
+</header>
+
+
+  <main>
+    <section class="hero">
+      <h1>Report Online Cyber Crime</h1>
+      <p>Report social media abuse, fraud, impersonation, and harassment.</p>
+    </section>
+
+    <!-- Complaint Form -->
+    <section id="complaint" class="card">
+      <h2>File a Complaint</h2>
+      <p id="complaint-note" class="muted">You must be logged in as a <strong>User</strong> to file a complaint.</p>
+
+      <form id="complaint-form">
+        <input type="text" id="c-name" placeholder="Full Name" required />
+        <input type="email" id="c-email" placeholder="Email Address" required />
+        <input type="text" id="c-phone" placeholder="Phone Number" required />
+        <select id="c-category" required>
+          <option value="">Select Complaint Type</option>
+          <option value="harassment">Online Harassment</option>
+          <option value="fraud">Fraud / Scam</option>
+          <option value="impersonation">Impersonation</option>
+          <option value="other">Other</option>
+        </select>
+        <textarea id="c-details" placeholder="Complaint Details" rows="5" required></textarea>
+        <button type="submit">Submit Complaint</button>
+      </form>
+
+      <p id="complaint-response" class="notice"></p>
+    </section>
+
+    <!-- Status Check -->
+    <section id="status" class="card">
+      <h2>Check Complaint Status</h2>
+      <form id="status-form">
+        <input type="text" id="complaint-id" placeholder="Enter Complaint ID (e.g. CYP123456)" required />
+        <button type="submit">Check Status</button>
+      </form>
+      <div id="status-result" class="notice"></div>
+    </section>
+
+    <!-- Alerts -->
+    <section id="alerts" class="card">
+      <h2>Cyber Safety Alerts</h2>
+      <div id="alerts-container"></div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 Cyber Crime Cell | Powered by Police Department</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
+

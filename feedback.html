@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Feedback - Cyber Crime Portal</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <div class="logo">🛡️ Cyber Crime Portal</div>
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="feedback.html">Feedback</a></li>
+    </ul>
+  </nav>
+</header>
+
+<section class="content">
+  <h2>Feedback</h2>
+  <form id="feedback-form">
+    <input type="text" placeholder="Your Name" required>
+    <input type="email" placeholder="Your Email" required>
+    <textarea placeholder="Your Feedback" required></textarea>
+    <button type="submit">Submit Feedback</button>
+  </form>
+  <p id="feedback-response"></p>
+</section>
+
+<footer>
+  <p>© 2025 Cyber Crime Cell | Powered by Police Department</p>
+</footer>
+
+<script>
+document.getElementById("feedback-form").addEventListener("submit", (e)=>{
+  e.preventDefault();
+  document.getElementById("feedback-response").innerText = "✅ Thank you for your valuable feedback!";
+});
+</script>
+</body>
+</html>
